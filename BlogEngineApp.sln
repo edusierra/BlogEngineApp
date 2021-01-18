@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogEntity", "BlogEntity\BlogEntity.csproj", "{59ADFE1F-FE6A-43D6-8450-D8829F5814FB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreBlogData", "CoreBlogData\CoreBlogData.csproj", "{D2B4BF10-0C5E-43DD-A7BC-8D2B780A5288}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogUI", "BlogUI\BlogUI.csproj", "{0D4E630B-79AD-44AF-99A1-934B100BCDCE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{59ADFE1F-FE6A-43D6-8450-D8829F5814FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59ADFE1F-FE6A-43D6-8450-D8829F5814FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59ADFE1F-FE6A-43D6-8450-D8829F5814FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59ADFE1F-FE6A-43D6-8450-D8829F5814FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2B4BF10-0C5E-43DD-A7BC-8D2B780A5288}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2B4BF10-0C5E-43DD-A7BC-8D2B780A5288}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2B4BF10-0C5E-43DD-A7BC-8D2B780A5288}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2B4BF10-0C5E-43DD-A7BC-8D2B780A5288}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D4E630B-79AD-44AF-99A1-934B100BCDCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D4E630B-79AD-44AF-99A1-934B100BCDCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D4E630B-79AD-44AF-99A1-934B100BCDCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D4E630B-79AD-44AF-99A1-934B100BCDCE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0B3EADEE-A3D9-4C6D-B250-DBEABF697861}
+	EndGlobalSection
+EndGlobal

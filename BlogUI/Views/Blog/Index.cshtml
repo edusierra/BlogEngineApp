@@ -1,0 +1,61 @@
+﻿@model IEnumerable<BlogEntity.Post>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Post</h1>
+@if (User.Identity.IsAuthenticated && User.IsInRole("Writer"))
+{
+    <a asp-action="Create">Create Post</a>
+}
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PostText)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Author)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PublishDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AllowEdit)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PostText)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Author)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PublishDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AllowEdit)
+            </td>
+            <td>
+                @Html.ActionLink("Comment", "Create", "Comment", new { id = item.Id }) |
+                @if (User.Identity.IsAuthenticated && User.IsInRole("Writer"))
+                {
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Id })
+                }
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
