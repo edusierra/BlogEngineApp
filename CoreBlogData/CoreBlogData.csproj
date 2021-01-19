@@ -22,4 +22,8 @@
     <ProjectReference Include="..\BlogEntity\BlogEntity.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="scripts\" />
+  </ItemGroup>
+
 </Project>
